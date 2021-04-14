@@ -18,13 +18,14 @@ function moveDodgerLeft() {
 document.addEventListener("keydown", function(e) {
   if (e.key === "ArrowLeft") {
     moveDodgerLeft();
-else if (e.key ==="ArrowRight") {
 
-}
+  }
+  else if (e.key ==="ArrowRight") {
+    moveDodgerRight()
   }
 });
 
-unction moveDodgerLeft() {
+unction moveDodgerRight() {
   let leftNumbers = dodger.style.left.replace("px", "");
   let left = parseInt(leftNumbers, 10);
 
