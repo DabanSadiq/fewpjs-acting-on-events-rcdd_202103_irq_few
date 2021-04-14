@@ -18,18 +18,17 @@ function moveDodgerLeft() {
 document.addEventListener("keydown", function(e) {
   if (e.key === "ArrowLeft") {
     moveDodgerLeft();
-
-  }
-  else if (e.key ==="ArrowRight"){
-    moveDodgerRight();
+else if (e.key ==="ArrowRight") {
+  
+}
   }
 });
 
-function moveDodgerRight() {
-  let rightNumbers = dodger.style.right.replace("px", "");
-  let right = parseInt(rightNumbers, 10);
-console.log(dodger.style.right);
-  if (right < 180) {
-    dodger.style.right = `${right + 1}px`;
+unction moveDodgerLeft() {
+  let leftNumbers = dodger.style.left.replace("px", "");
+  let left = parseInt(leftNumbers, 10);
+
+  if (left < 180) {
+    dodger.style.left = `${left + 1}px`;
   }
 }
